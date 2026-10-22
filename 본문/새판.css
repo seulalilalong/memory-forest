@@ -3,7 +3,7 @@
 
 
 .n9 { position: relative; background: var(--paper-c); }
-.n9::before { content: ""; position: absolute; inset: 0; background: url("../사진/T01_종이결.jpg") center/cover; opacity: .35; pointer-events: none; }
+.n9::before { content: ""; position: absolute; inset: 0; background: url("../사진/T01_종이결.webp") center/cover; opacity: .35; pointer-events: none; }
 .n9__run { position: relative; height: 2600px; }
 .n9__frame { position: sticky; top: var(--tb9, 0px); width: 1200px; height: 960px; margin: 0 auto; zoom: var(--z9, 1); overflow: hidden; }   
 .n9 .at { position: absolute; margin: 0; }
@@ -31,13 +31,13 @@
 .n9 .leaf { position: absolute; opacity: 0; z-index: 2; pointer-events: none; will-change: transform, opacity; }
 
 
-.n11 { position: relative; background: #5A4A26 url("../사진/B09_부엌창가바탕_11.jpg") center/cover; overflow: hidden; }
+.n11 { position: relative; background: #5A4A26 url("../사진/B09_부엌창가바탕_11.webp") center/cover; overflow: hidden; }
 .n11__stage { position: relative; width: 1200px; height: 1449px; margin: 0 auto; zoom: var(--z); word-break: keep-all; }
 .n11 .card { position: absolute; margin: 0; background: center/100% 100% no-repeat; }
-.n11 .front { background-image: url("../사진/G06_엽서종이_앞.png"); left: 150px; top: 116px; width: 916px; height: 582px; }
+.n11 .front { background-image: url("../사진/G06_엽서종이_앞.webp"); left: 150px; top: 116px; width: 916px; height: 582px; }
 .n11 .front .ph { position: absolute; left: 26px; top: 26px; width: 861px; height: 527px; margin: 0; z-index: 1; }
 .n11 .front .ph img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; }
-.n11 .back { background-image: url("../사진/G07_엽서종이_뒤.png"); left: 163px; top: 719px; width: 906px; height: 576px; }
+.n11 .back { background-image: url("../사진/G07_엽서종이_뒤.webp"); left: 163px; top: 719px; width: 906px; height: 576px; }
 .n11 .back > * { position: absolute; margin: 0; z-index: 1; }
 .n11 .rule { left: 446px; top: 51px; width: 1.5px; height: 482px; background: var(--point, #868069); }
 .n11 .pc { left: 461px; top: 56px; font-size: 44px; line-height: 1; font-weight: 400; color: var(--deep); letter-spacing: .02em; }
@@ -57,7 +57,7 @@
 
 .n12 { word-break: keep-all; background: var(--page); }
 .n12__top { position: relative; background: var(--paper-c); padding: 84px var(--gut, 24px) 110px; }
-.n12__top::after { content: ""; position: absolute; inset: 0; background: url("../사진/T01_종이결.jpg") center/cover; mix-blend-mode: multiply; opacity: .5; pointer-events: none; }
+.n12__top::after { content: ""; position: absolute; inset: 0; background: url("../사진/T01_종이결.webp") center/cover; mix-blend-mode: multiply; opacity: .5; pointer-events: none; }
 .n12__wrap { position: relative; z-index: 1; max-width: 1040px; margin: 0 auto; }
 .n12__head { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: end; margin-bottom: 56px; }
 .n12__head h2 { margin: 0; font-size: 52px; line-height: 1.2; font-weight: 700; color: var(--deep); }
@@ -82,11 +82,11 @@
 .n12__bot { position: relative; background: var(--sage); padding: 40px var(--gut, 24px) 96px; }
 .n12__bot .wave { position: absolute; left: 0; top: -54px; width: 100%; height: 56px; display: block; }
 
-.n12__bot::after { content: ""; position: absolute; left: 0; right: 0; top: -54px; bottom: 0; background: url("../사진/T01_종이결.jpg") center / cover; mix-blend-mode: multiply; opacity: .5; pointer-events: none; -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 56' preserveAspectRatio='none'%3E%3Cpath d='M0 56 L0 30 C150 6 300 6 450 26 C600 46 750 50 900 28 C1020 10 1110 8 1200 22 L1200 56 Z'/%3E%3C/svg%3E") 0 0 / 100% 56px no-repeat, linear-gradient(#000, #000) 0 56px / 100% calc(100% - 56px) no-repeat; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 56' preserveAspectRatio='none'%3E%3Cpath d='M0 56 L0 30 C150 6 300 6 450 26 C600 46 750 50 900 28 C1020 10 1110 8 1200 22 L1200 56 Z'/%3E%3C/svg%3E") 0 0 / 100% 56px no-repeat, linear-gradient(#000, #000) 0 56px / 100% calc(100% - 56px) no-repeat; }
+.n12__bot::after { content: ""; position: absolute; left: 0; right: 0; top: -54px; bottom: 0; background: url("../사진/T01_종이결.webp") center / cover; mix-blend-mode: multiply; opacity: .5; pointer-events: none; -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 56' preserveAspectRatio='none'%3E%3Cpath d='M0 56 L0 30 C150 6 300 6 450 26 C600 46 750 50 900 28 C1020 10 1110 8 1200 22 L1200 56 Z'/%3E%3C/svg%3E") 0 0 / 100% 56px no-repeat, linear-gradient(#000, #000) 0 56px / 100% calc(100% - 56px) no-repeat; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 56' preserveAspectRatio='none'%3E%3Cpath d='M0 56 L0 30 C150 6 300 6 450 26 C600 46 750 50 900 28 C1020 10 1110 8 1200 22 L1200 56 Z'/%3E%3C/svg%3E") 0 0 / 100% 56px no-repeat, linear-gradient(#000, #000) 0 56px / 100% calc(100% - 56px) no-repeat; }
 .n12__bot .n12__wrap { position: relative; z-index: 1; }
 .n12__cmp { display: flex; justify-content: center; }   
 
-.n12 .ccard { color: var(--ink); border: 0 solid transparent; border-image: url("../사진/G16_카드종이_1.png") 60 fill / 39px round; }
+.n12 .ccard { color: var(--ink); border: 0 solid transparent; border-image: url("../사진/G16_카드종이_1.webp") 60 fill / 39px round; }
 .n12 .n12__cmp .ccard { width: min(900px, 100%); display: grid; grid-template-columns: 400px 1fr; grid-template-rows: auto repeat(5, 58px); column-gap: 44px; padding: 54px 58px 44px 54px; }
 .n12 .ccard .ph { position: relative; margin: 0; transform: rotate(-1.6deg); }
 .n12 .n12__cmp .ccard .ph { grid-row: 1 / -1; align-self: center; height: auto; }
@@ -101,10 +101,10 @@
 .n13__wrap { max-width: 1040px; margin: 0 auto; }
 .n13 h2 { margin: 0 0 30px; font-size: 34px; line-height: 1.25; font-weight: 700; color: var(--deep); }
 .n13__list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 21px; margin: 0; padding: 0; list-style: none; }
-.n13 .qa { border: 0 solid transparent; border-image: url("../사진/G16_카드종이_1.png") 60 fill / 39px stretch; padding: 40px 38px 34px; min-height: 300px; display: flex; flex-direction: column; color: var(--ink); }
-.n13 .qa:nth-child(2) { border-image-source: url("../사진/G17_카드종이_2.png"); }
-.n13 .qa:nth-child(3) { border-image-source: url("../사진/G18_카드종이_3.png"); }
-.n13 .qa:nth-child(4) { border-image-source: url("../사진/G19_카드종이_4.png"); }
+.n13 .qa { border: 0 solid transparent; border-image: url("../사진/G16_카드종이_1.webp") 60 fill / 39px stretch; padding: 40px 38px 34px; min-height: 300px; display: flex; flex-direction: column; color: var(--ink); }
+.n13 .qa:nth-child(2) { border-image-source: url("../사진/G17_카드종이_2.webp"); }
+.n13 .qa:nth-child(3) { border-image-source: url("../사진/G18_카드종이_3.webp"); }
+.n13 .qa:nth-child(4) { border-image-source: url("../사진/G19_카드종이_4.webp"); }
 .n13 .ico { display: block; height: 50px; width: auto; margin: 0 0 14px; align-self: flex-start; }
 .n13 .ico.pencil { height: 38px; margin: 6px 0 20px; } .n13 .ico.feather { height: 40px; margin: 5px 0 19px; }
 .n13 .ico.cups { height: 34px; margin: 8px 0 22px; } .n13 .ico.map { height: 46px; margin: 2px 0 16px; }
@@ -167,7 +167,7 @@
   
   .n12__top { overflow: hidden; overflow: clip; }   
   .n12__road { position: relative; gap: 34px; padding: 4px 0; }
-  .n12__road::before { content: ""; position: absolute; left: -23px; top: -30px; bottom: -30px; width: 130px; background: url("../사진/G11_수채길_세로.png") center / 100% 100% no-repeat; opacity: .82; pointer-events: none; }
+  .n12__road::before { content: ""; position: absolute; left: -23px; top: -30px; bottom: -30px; width: 130px; background: url("../사진/G11_수채길_세로.webp") center / 100% 100% no-repeat; opacity: .82; pointer-events: none; }
   .n12 .stop { position: relative; z-index: 1; left: auto !important; top: auto !important; width: auto; display: grid; grid-template-columns: 84px 1fr; column-gap: 14px; }
   .n12 .stop .ico { position: static; height: 58px; grid-row: 1 / span 2; grid-column: 1; align-self: start; justify-self: center; }
   .n12 .stop h3 { grid-column: 2; font-size: 20px; } .n12 .stop h3 b { font-size: 24px; }
@@ -324,7 +324,7 @@
 }
 
 
-.n4 { background: #8FA06A url("../사진/B07.png") center/cover; word-break: keep-all; }
+.n4 { background: #8FA06A url("../사진/B07.webp") center/cover; word-break: keep-all; }
 .n4__stage { position: relative; width: 1200px; height: 1500px; margin: 0 auto; zoom: var(--z); color: var(--ink); }
 .n4__sheet { position: absolute; left: 120px; top: 75px; width: 954px; height: 1343px; background: #FAF9F5; }
 .n4__sheet > * { position: absolute; margin: 0; }
@@ -336,7 +336,7 @@
 .n4__col p { margin: 0; font-size: 20px; line-height: 1.6; }
 .n4__col--c { text-align: center; } .n4__col--c p.big { font-size: 22px; font-weight: 700; line-height: 1.5; } .n4__col--c p.addr { margin-top: 8px; font-size: 18px; }
 .n4__col--r { text-align: right; }
-.n4__photo { left: 32px; top: 705px; width: 886px; height: 585px; background: url("../사진/P14.jpg") center/cover; }
+.n4__photo { left: 32px; top: 705px; width: 886px; height: 585px; background: url("../사진/P14.webp") center/cover; }
 @media (max-width: 899px) {
   .n4 { padding: 36px 16px; }
   .n4__stage { width: auto; height: auto; zoom: 1; }
@@ -391,10 +391,10 @@
 .x16__track i { position: absolute; left: 0; top: 0; width: 24px; height: 3px; background: var(--grass); border-radius: 2px; }
 
 
-.x18 { position: relative; overflow: hidden; background: #C7D3AE url("../사진/B11_풀잎바탕_18.jpg") center / cover; word-break: keep-all; }
+.x18 { position: relative; overflow: hidden; background: #C7D3AE url("../사진/B11_풀잎바탕_18.webp") center / cover; word-break: keep-all; }
 .x18__stage { position: relative; width: 1200px; height: 570px; margin: 0 auto; zoom: var(--z); }
 .x18__ttl { position: absolute; left: 0; right: 0; top: 30px; margin: 0; text-align: center; font-size: 30px; font-weight: 700; color: var(--ink); text-shadow: 0 1px 8px rgba(249,242,223,.8); }
-.x18__folder { position: absolute; left: 280px; top: 95px; width: 640px; height: 406px; background: url("../사진/G24_폴더셋_18.png") 0 0 / 100% 100% no-repeat; filter: drop-shadow(0 10px 18px rgba(60,58,32,.12)); }
+.x18__folder { position: absolute; left: 280px; top: 95px; width: 640px; height: 406px; background: url("../사진/G24_폴더셋_18.webp") 0 0 / 100% 100% no-repeat; filter: drop-shadow(0 10px 18px rgba(60,58,32,.12)); }
 .x18__tabs { margin: 0; padding: 0; list-style: none; }
 .x18__tabs li { position: absolute; transform: translate(-50%, -50%); }
 .x18__tabs li:nth-child(1) { left: 15.94%; top: 15.76%; }   
@@ -422,7 +422,7 @@
 
 
 .x19 { position: relative; background: var(--paper-c); padding: 70px var(--gut, 24px) 80px; word-break: keep-all; }
-.x19::before { content: ""; position: absolute; inset: 0; background: url("../사진/T01_종이결.jpg") center / cover; mix-blend-mode: multiply; opacity: .5; pointer-events: none; }
+.x19::before { content: ""; position: absolute; inset: 0; background: url("../사진/T01_종이결.webp") center / cover; mix-blend-mode: multiply; opacity: .5; pointer-events: none; }
 .x19__wrap { position: relative; max-width: 1040px; margin: 0 auto; }
 .x19__wrap h2 { margin: 0; text-align: center; font-size: 34px; line-height: 1.3; font-weight: 700; color: var(--ink); }
 .x19__lead { margin: 12px 0 44px; text-align: center; font-size: 17px; line-height: 1.6; color: var(--ink); }
@@ -475,7 +475,7 @@
 
 .x20 { word-break: keep-all; }
 .x20__top { position: relative; background: var(--paper-c); overflow: hidden; }
-.x20__top::before { content: ""; position: absolute; inset: 0; background: url("../사진/T01_종이결.jpg") center / cover; mix-blend-mode: multiply; opacity: .5; pointer-events: none; }
+.x20__top::before { content: ""; position: absolute; inset: 0; background: url("../사진/T01_종이결.webp") center / cover; mix-blend-mode: multiply; opacity: .5; pointer-events: none; }
 .x20__stage { position: relative; width: 1200px; height: 620px; margin: 0 auto; zoom: var(--z); }
 .x20__map { position: absolute; left: 16px; top: 56px; width: 500px; height: 500px; }
 .x20__mapimg { display: block; width: 100%; height: 100%; mix-blend-mode: multiply; -webkit-mask: radial-gradient(ellipse 54% 54% at 50% 50%, #000 70%, transparent 100%); mask: radial-gradient(ellipse 54% 54% at 50% 50%, #000 70%, transparent 100%); }   
@@ -566,7 +566,7 @@
 }
 
 
-.x10 { position: relative; overflow: hidden; background: #D2CCB8 url("../사진/T02_바탕_필름결.jpg") center / cover; word-break: keep-all; }
+.x10 { position: relative; overflow: hidden; background: #D2CCB8 url("../사진/T02_바탕_필름결.webp") center / cover; word-break: keep-all; }
 .x10__m { display: none; }
 .x10__stage { position: relative; width: 1200px; height: 980px; margin: 0 auto; zoom: var(--z); }
 .x10__box { position: absolute; left: 308px; top: 0; width: 736px; height: 980px; }
@@ -605,7 +605,7 @@
 .x15__card:hover { filter: brightness(.97); }
 
 
-.x5 { position: relative; overflow: hidden; background: var(--paper-c) url("../사진/B13_책방바탕_5.jpg") center bottom / cover; word-break: keep-all; }   
+.x5 { position: relative; overflow: hidden; background: var(--paper-c) url("../사진/B13_책방바탕_5.webp") center bottom / cover; word-break: keep-all; }   
 .x5__stage { position: relative; width: 1200px; height: 1620px; margin: 0 auto; zoom: var(--z); }
 .x5__stage > * { position: absolute; margin: 0; }
 .x5__top { left: 0; top: 0; width: 1200px; height: 720px; }
@@ -620,12 +620,12 @@
 .x5__card { left: 60px; top: 1290px; width: 300px; height: auto; transform: rotate(-5deg); }   
 
 
-.x7 { position: relative; overflow: hidden; background: #EFE9D6 url("../사진/B12_일정바탕_7.jpg") center / cover; word-break: keep-all; }
+.x7 { position: relative; overflow: hidden; background: #EFE9D6 url("../사진/B12_일정바탕_7.webp") center / cover; word-break: keep-all; }
 .x7::before { content: ""; position: absolute; inset: 0; background: rgba(249,242,223,.22); pointer-events: none; }
 .x7__stage { position: relative; width: 1200px; height: 1600px; margin: 0 auto; zoom: var(--z); }
 .x7__brand { position: absolute; left: 0; right: 0; top: 118px; margin: 0; text-align: center; color: var(--ink); font-size: 72px; font-weight: 700; line-height: 1; text-shadow: 0 1px 14px rgba(249,242,223,.9); }
 .x7__paper { position: absolute; left: 120px; top: 297px; width: 958px; height: 1182px; background: var(--paper-c); box-shadow: 0 10px 30px rgba(60,58,32,.16); }
-.x7__paper::before { content: ""; position: absolute; inset: 0; background: url("../사진/T01_종이결.jpg") center / cover; opacity: .5; pointer-events: none; }
+.x7__paper::before { content: ""; position: absolute; inset: 0; background: url("../사진/T01_종이결.webp") center / cover; opacity: .5; pointer-events: none; }
 .x7__paper > * { position: absolute; margin: 0; }
 .x7__tape { position: absolute; left: 483px; top: 263px; width: 287px; height: 70px; transform: rotate(-2deg); background: rgba(221,218,178,.82); clip-path: polygon(0 6%,3% 0,97% 4%,100% 0,98.5% 20%,100% 38%,98% 55%,100% 72%,98.5% 88%,100% 100%,3% 96%,0 100%,1.5% 82%,0 64%,2% 46%,0 28%); }
 .x7__mon { left: 55px; top: 56px; font-size: 38px; font-weight: 700; color: var(--ink); }
@@ -833,3 +833,6 @@
 
 
 .t-wait [data-t] { visibility: hidden; }
+
+
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }

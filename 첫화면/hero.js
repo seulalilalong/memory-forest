@@ -170,14 +170,23 @@
   (SMALL ? tryLoad(SET + "-m").catch(() => tryLoad(SET)) : tryLoad(SET)).then(([FSET, m]) => {
     count = m.count; IW = 1280; IH = 720;
     m.dir = FSET;
-    frames = Array.from({ length: count }, (_, i) => {
+    const url = i => `${m.dir}/f_${String(i).padStart(m.pad || 3, "0")}.${m.ext || "webp"}`;
+    const order = [], seen = new Set(), add = i => { if (!seen.has(i)) { seen.add(i); order.push(i); } };
+    for (let i = 0; i < count; i += 8) add(i);
+    add(count - 1);
+    const firstPass = order.length;
+    [4, 2, 1].forEach(st => { for (let i = 0; i < count; i += st) add(i); });
+    let next = 0, flying = 0;
+    const pump = () => { while (flying < 6 && next < order.length) { const i = order[next++]; flying++; frames[i].src = url(i); } };
+    frames = Array.from({ length: count }, () => {
       const im = new Image();
       im.decoding = "async";
-      im.onload = () => { loaded++; loading.querySelector("b").textContent = Math.round(loaded / count * 100);
-                          if (loaded === count) loading.classList.add("done"); dirty = true; };
-      im.src = `${m.dir}/f_${String(i).padStart(m.pad || 3, "0")}.${m.ext || "webp"}`;
+      const done = ok => { flying--; if (ok) { loaded++; loading.querySelector("b").textContent = Math.round(loaded / count * 100); dirty = true; }
+                           if (loaded >= Math.min(firstPass, count)) loading.classList.add("done"); pump(); };
+      im.onload = () => done(true); im.onerror = () => done(false);
       return im;
     });
+    pump();
     resize();
   });
 
