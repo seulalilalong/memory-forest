@@ -577,7 +577,7 @@
 .x10__say { position: absolute; left: 21px; top: 470px; width: 72px; margin: 0; text-align: center; font-size: 13px; line-height: 16px; color: var(--ink); z-index: 3; }
 @media (max-width: 899px) {
   .x10__m { display: block; margin: 0; padding: 40px 20px 8px; text-align: center; font-size: 17px; font-weight: 700; color: var(--ink); }
-  .x10__stage { width: 1044px; zoom: var(--z10m); margin: 0; }
+  .x10__stage { width: 1044px; zoom: 1; transform: scale(var(--z10m)); transform-origin: 0 0; margin: 0 0 calc(980px * (var(--z10m) - 1)); }   
   .x10__box { left: 308px; }
   .x10__say { display: none; }
 }
@@ -713,7 +713,8 @@
   .n6 .x6-days .x6-dates, .n6 .x6-dates { gap: 8px; }
   
   .x7 { overflow: hidden; }
-  .x7__stage { zoom: var(--z7m); margin-left: -50px; }
+  .x7__stage { zoom: 1; transform: translateX(calc(-50px * var(--z7m))) scale(var(--z7m)); transform-origin: 0 0; margin: 0 0 calc(1600px * (var(--z7m) - 1)); }   
+  .x7--two .x7__stage { margin-bottom: calc(2937px * (var(--z7m) - 1)); }
   .x7__list { display: none; }
   
   .x18__folder .x18__arrow { width: 28px; height: 28px; font-size: 15px; top: 60%; }
