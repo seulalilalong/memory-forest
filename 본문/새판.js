@@ -47,7 +47,7 @@
   const shelf = document.getElementById("n8shelf"); if (!shelf) return;
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const MIX = ["#733A12", "#6E8650", "#994D18", "#A0703F", "#868069", "#BBC99B", "#5E2F0F", "#839A61", "#B5652C"], LIGHT = new Set(["#BBC99B"]);
-  fetch("본문/내용.json?v=202610221859").then(r => r.json()).then(D => {
+  fetch("본문/내용.json?v=202610221942").then(r => r.json()).then(D => {
     const SH = D.SHELVES, notes = D.BOOK_NOTES || {};
     const RECENT = D.RECENT || [], seen = new Set(RECENT.map(r => r.t));
     const ALL = RECENT.map(r => ({ t: r.t, a: r.a, k: r.k, when: r.when, img: r.img }))
@@ -86,7 +86,7 @@
   const root = document.getElementById("clubs"); if (!root || !root.classList.contains("n6")) return;
   const P = "사진/", TODAY = new Date().toISOString().slice(0, 10);
   const $id = id => document.getElementById(id);
-  fetch("본문/내용.json?v=202610221859").then(r => r.json()).then(D => { const CLUBS = D.CLUBS6 || []; if (!CLUBS.length) return;
+  fetch("본문/내용.json?v=202610221942").then(r => r.json()).then(D => { const CLUBS = D.CLUBS6 || []; if (!CLUBS.length) return;
 
   const esc = t => String(t).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const WD = "일월화수목금토";
@@ -140,7 +140,7 @@
     row.addEventListener("scroll", upd, { passive: true }); addEventListener("resize", upd); upd();
   });
   const STAMP = [["G30_우표_공책연필", "펼친 공책과 연필 우표"], ["G31_우표_창가화분", "책방 격자 창과 화분 우표"], ["G32_우표_찻잔책", "찻잔과 쌓인 책 우표"], ["G33_우표_숲길", "숲 오솔길 우표"]];
-  fetch("본문/내용.json?v=202610221859").then(r => r.json()).then(D => {
+  fetch("본문/내용.json?v=202610221942").then(r => r.json()).then(D => {
     const n14 = document.getElementById("x14notes");
     if (n14 && D.HUGI && D.HUGI.length) n14.innerHTML = D.HUGI.map(h => `<li class="x14__paper"><p>${esc(h.t)}</p><span class="by">${esc(h.by)}</span></li>`).join("");
     const no = i => String(i + 1).padStart(2, "0");
@@ -207,7 +207,7 @@
         el.style.cssText = `left:${cols[0] * cw + 8}px;top:${r * rh + 46}px;width:${cols.length * cw - 16}px`; cal.appendChild(el); }); });
     if (list) list.innerHTML = Object.values(EV).sort((a, b) => a.d - b.d).map(e => `<li${e.d === TODAY ? ' class="today"' : ""}><time>${M}월 ${e.d}일 (${W[new Date(Y, M - 1, e.d).getDay()]})</time><span>${esc(e.t)}</span></li>`).join("");
   }
-  fetch("본문/내용.json?v=202610221859").then(r => r.json()).then(D => {
+  fetch("본문/내용.json?v=202610221942").then(r => r.json()).then(D => {
     const MO = D.MONTH || {}, ok = m => m && /^\d{4}-\d{1,2}$/.test(m.ym || "");
     const months = (Array.isArray(MO.months) ? MO.months : [MO]).filter(ok).sort((a, b) => a.ym.localeCompare(b.ym));
     if (!months.length) return;
@@ -229,7 +229,7 @@
 
 (() => {
   const els = document.querySelectorAll("[data-photo]"); if (!els.length) return;
-  fetch("본문/내용.json?v=202610221859").then(r => r.json()).then(D => {
+  fetch("본문/내용.json?v=202610221942").then(r => r.json()).then(D => {
     const PH = D.PHOTOS || {};
     els.forEach(el => { const p = PH[el.dataset.photo]; if (!p || !p.src) return; const url = "사진/" + p.src;
       if (el.tagName === "IMG") { if (el.getAttribute("src") !== url) el.src = url; el.alt = p.alt || ""; el.style.objectPosition = p.pos || ""; }
@@ -239,7 +239,7 @@
 
 (() => {
   const root = document.documentElement;
-  fetch("본문/내용.json?v=202610221859").then(r => r.json()).then(D => {
+  fetch("본문/내용.json?v=202610221942").then(r => r.json()).then(D => {
     const get = p => p.split(".").reduce((o, k) => (o == null ? o : o[k]), D);
     const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
     document.querySelectorAll("[data-t]").forEach(el => { const v = get(el.dataset.t); if (typeof v === "string") el.innerHTML = esc(v).replace(/\n/g, "<br>"); });

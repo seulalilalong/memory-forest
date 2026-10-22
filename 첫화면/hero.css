@@ -9,7 +9,7 @@
   --night: #1C1712;
   --ray: 255 222 150;         
   --font: "Gowun Batang", serif;
-  --hero-len: 320vh;          
+  --hero-len: 500vh;          
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; background: var(--night); color: var(--ink); font-family: var(--font); }
