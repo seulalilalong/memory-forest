@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>책방 기억의 숲 — 견본 시안(새판)</title>
+<meta name="description" content="부산 기장 · 독서모임이 사는 책방 「기억의 숲」 — AI 브랜드 웹사이트 4주 과정 견본 시안">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap">
+<link rel="stylesheet" href="첫화면/hero.css">
+<link rel="stylesheet" href="본문/본문.css">
+<link rel="stylesheet" href="본문/새판.css">
+<script>document.documentElement.classList.add("t-wait");setTimeout(function(){document.documentElement.classList.remove("t-wait")},1200)</script>      
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-chair" viewBox="0 0 24 24"><path d="M7 3v18M7 13h10v8M7 13c0-2 1-3 3-3h4c2 0 3 1 3 3"/></symbol>
+  <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M4 20l4-1 11-11-3-3L5 16zM14 6l3 3"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M3 5c3-1 6-1 9 1v14c-3-2-6-2-9-1zM21 5c-3-1-6-1-9 1v14c3-2 6-2 9-1z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="1"/><path d="m3 7 9 7 9-7"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19C5 10 11 5 20 4c0 9-5 15-14 15zM5 19l8-8"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3z"/></symbol>
+  <symbol id="i-insta" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.5"/><circle cx="16.8" cy="7.2" r=".6"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2zM9 4v14M15 6v14"/></symbol>
+  <symbol id="i-talk" viewBox="0 0 24 24"><path d="M4 5h11v8H8l-4 3zM15 9h5v8l-3-2h-6v-2"/></symbol>
+</svg>
+<header class="topbar">
+  <a class="topbar__note" id="topNote" href="#month">이번 달 모임 신청 받는 중 →</a>
+  <div class="topbar__row">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mainMenu">메뉴</button>
+    <a class="logo" href="#hero" data-t="T_MENU.logo">기억의 숲</a>
+    <a class="btn-apply js-sms" href="sms:01048451007" data-t="T_MENU.apply">모임 신청</a>
+  </div>
+  <nav class="menu" id="mainMenu" aria-label="주 메뉴">
+    <a href="#about" data-t="T_MENU.m1">책방</a><a href="#clubs" data-t="T_MENU.m2">모임</a><a href="#books" data-t="T_MENU.m3">책장</a><a href="#memory" data-t="T_MENU.m4">기억쓰기</a><a href="#support" data-t="T_MENU.m5">기록</a><a href="#visit" data-t="T_MENU.m6">오시는 길</a>
+    <a class="menu__apply js-sms" href="sms:01048451007" data-t="T_MENU.apply">모임 신청</a>
+  </nav>
+</header>
+<main class="site-body">
+  <section id="hero" class="hero" aria-label="첫 화면 — 팝업북 책방, 숨어 있던 종이 아이">
+    <div class="stage">
+      <canvas class="cv-back" aria-hidden="true"></canvas>
+      <canvas class="cv-front" aria-hidden="true"></canvas>
+      <div class="rays" aria-hidden="true">
+        <i class="ray" style="--x:46%; --w:5%;  --a:30deg; --d:8.5s; --dl:-3s"></i>
+        <i class="ray" style="--x:57%; --w:8%;  --a:32deg; --d:6.5s; --dl:-1s"></i>
+        <i class="ray" style="--x:68%; --w:12%; --a:34deg; --d:9s;   --dl:-5s"></i>
+        <i class="ray" style="--x:80%; --w:6%;  --a:36deg; --d:7.5s; --dl:-2s"></i>
+        <i class="ray" style="--x:90%; --w:9%;  --a:38deg; --d:10s;  --dl:-6s"></i>
+      </div>
+      <div class="glows" aria-hidden="true"><i style="left:51.2%;top:23%"></i><i style="left:63.1%;top:18%"></i><i class="pool" style="left:56%;top:58%"></i></div>
+      <svg class="bird" viewBox="0 0 120 90" aria-hidden="true">
+        <g class="sheet">
+          <polygon points="16,66 62,56 104,66 58,78" fill="#FBF6EA" stroke="#C9B48A" stroke-width=".8"/>
+          <polyline points="39,61 81,72" fill="none" stroke="#E2D3B2" stroke-width=".8"/>
+          <polyline points="60,56.5 60,78" fill="none" stroke="#E2D3B2" stroke-width=".6"/>
+        </g>
+        <g class="crane">
+          <g class="wing wing-far"><polygon points="44,50 76,48 64,8" fill="#E4D5B5" stroke="#C2AC80" stroke-width=".7" stroke-linejoin="round"/><polyline points="60,49 64,8" fill="none" stroke="#D3C09A" stroke-width=".6"/></g>
+          <polygon class="tail" points="40,57 6,20 50,53" fill="#EDE1C6" stroke="#C2AC80" stroke-width=".7" stroke-linejoin="round"/>
+          <polygon class="body" points="36,57 58,47 82,57 58,66" fill="#FBF6EA" stroke="#C2AC80" stroke-width=".7" stroke-linejoin="round"/>
+          <polygon points="58,47 82,57 58,66" fill="#F1E6CC"/>
+          <polygon class="neck" points="80,57 102,16 74,53" fill="#F4EAD3" stroke="#C2AC80" stroke-width=".7" stroke-linejoin="round"/>
+          <polygon class="head" points="102,16 110,25 99,22" fill="#E9DCBD" stroke="#C2AC80" stroke-width=".6" stroke-linejoin="round"/>
+          <g class="wing wing-near"><polygon points="34,52 72,50 50,4" fill="#FFFBF2" stroke="#C2AC80" stroke-width=".7" stroke-linejoin="round"/><polygon points="50,4 72,50 56,51" fill="#F3EAD6"/><polyline points="50,4 56,51" fill="none" stroke="#E2D3B2" stroke-width=".6"/></g>
+        </g>
+      </svg>
+      <canvas class="cv-leaves" aria-hidden="true"></canvas>
+      <svg class="doodles" viewBox="0 0 1600 900" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <filter id="crayon" x="-5%" y="-5%" width="110%" height="110%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="4" result="n"/>
+            <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -3 2.1" result="grain"/>
+            <feDisplacementMap in="SourceGraphic" in2="n" scale="7" xChannelSelector="R" yChannelSelector="G" result="d"/>
+            <feComposite in="d" in2="grain" operator="in"/>
+          </filter>
+        </defs>
+        <g filter="url(#crayon)" fill="none" stroke-linecap="round" stroke-linejoin="round"></g>
+      </svg>
+      <p class="hint"><span data-t="T_HERO.hint">천천히 내려 보세요</span> <span aria-hidden="true">↓</span></p>
+      <div class="title">
+        <h1 data-t="T_HERO.h1">기억의 숲</h1>
+        <p class="line" data-t="T_HERO.line">기억의 숲에는 어린 시절이 숨어 있다.</p>
+        <p class="sub" data-t="T_HERO.sub">부산 기장 · 독서모임이 사는 책방</p>
+        <a class="title__btn" href="#next" data-t="T_HERO.btn">아래로 천천히 ↓</a>
+      </div>
+      <a class="skip" href="#next" data-t="T_HERO.skip">건너뛰기 ↓</a>
+      <div class="progress" aria-hidden="true"><i></i></div>
+      <p class="loading" aria-live="polite">그림 불러오는 중 <b>0</b>%</p>
+    </div>
+  </section>
+  <section id="next" class="x3" aria-label="무엇을 찾아오셨나요">
+   <div class="x3__band">
+    <h2 data-t="T_WAYS.h">무엇을 찾아오셨나요?</h2>
+    <p class="x3__lead" data-t="T_WAYS.lead">원하는 갈래를 누르면 바로 그 자리로 가요.</p>
+    <ul class="x3__ways">
+     <li><a href="#clubs"><img data-photo="k1" src="사진/K1_의자.png" alt=""><b data-t="T_WAYS.w1">모임에 함께하고 싶어요</b></a></li>
+     <li><a href="#taste"><img data-photo="k2" src="사진/K2_연필.png" alt=""><b data-t="T_WAYS.w2">먼저 해 보고 싶어요</b></a></li>
+     <li><a href="#about"><img data-photo="k3" src="사진/K3_책.png" alt=""><b data-t="T_WAYS.w3">책방 이야기가 궁금해요</b></a></li>
+     <li><a href="#visit"><img data-photo="k4" src="사진/K4_지도.png" alt=""><b data-t="T_WAYS.w4">찾아가고 싶어요</b></a></li>
+    </ul>
+   </div>
+  </section>
+  <div id="ch1" class="chapter" style="--tone:#DDDAB2;--tone-ink:var(--ink)">
+    <svg class="chapter__tear" viewBox="0 0 1200 24" preserveAspectRatio="none" aria-hidden="true"><path d="M0 24V10 L31 12 L72 5 L107 12 L146 13 L188 4 L231 3 L270 7 L311 6 L341 10 L382 11 L421 9 L465 5 L496 13 L524 11 L560 3 L605 4 L634 12 L659 7 L683 7 L722 12 L758 9 L794 12 L832 5 L867 4 L892 5 L931 6 L963 13 L1000 13 L1033 9 L1073 9 L1115 8 L1156 12 L1193 12 L1200 8 V24Z"/></svg>
+    <div class="chapter__in rv"><span class="chapter__tab">Ⅰ</span><p class="chapter__name" data-t="T_CHAPTERS.c1">책방</p><p class="chapter__line" data-t="T_CHAPTERS.c1l">기장대로 초록 간판 아래 작은 책방</p></div>
+  </div>
+  <section id="about" class="n4" aria-label="책방 소개">
+   <div class="n4__stage">
+    <div class="n4__sheet">
+     <div class="n4__logo"><img data-photo="logo" src="사진/L01.png" alt="책방 기억의 숲"></div>
+     <p class="n4__sub" data-t="T_ABOUT.sub">책을 파는 곳이면서, 책을 함께 읽는 사람들이 사는 곳</p>
+     <div class="n4__cols">
+      <div class="n4__col"><h3 data-t="T_ABOUT.lh">모임</h3><p data-t="T_ABOUT.l">낭독 &amp; 필사<br>월 한 권 고전<br>벽돌책 읽기모임<br>자유로운 글쓰기<br>번데기 독서모임</p></div>
+      <div class="n4__col n4__col--c"><p class="big" data-t="T_ABOUT.big">2023년 6월에 문을 열어<br>7월부터 모임을 시작했어요</p><p class="addr" data-t="SITE.addr">부산 기장군 기장읍 기장대로 82</p></div>
+      <div class="n4__col n4__col--r"><h3 data-t="T_ABOUT.rh">체험</h3><p data-t="T_ABOUT.r">어린 시절 기억 엽서<br>시집 한 줄 필사</p></div>
+     </div>
+     <div class="n4__photo" data-photo="n4" role="img" aria-label="책방 창가 선반"></div>
+    </div>
+   </div>
+  </section>
+  <section id="shop" class="x5" aria-label="책방 기억의 숲">
+   <div class="x5__stage">
+    <div class="x5__top" data-reveal><img data-photo="x5_top" src="사진/P16.jpg" alt="칠판과 화분이 놓인 책방 입구" loading="lazy"></div>
+    <h2 class="x5__h" data-reveal data-t="T_SHOP.h">모임이 열리는<br>동네 책방</h2>
+    <p class="x5__p1" data-reveal data-t="T_SHOP.p1">어린 시절의 기억을 엽서에 적어 보는 자리도, 시집을 펼쳐 한 줄 옮겨 쓰는 노트도 있어요.</p>
+    <p class="x5__p2" data-reveal><b data-t="T_SHOP.p2b">2023년 6월에 문을 열었어요</b><span data-t="T_SHOP.p2">7월부터 모임을 시작했고, 2026년 여름 3주년을 맞았습니다.</span></p>
+    <div class="x5__b" data-reveal><img data-photo="x5_b" src="사진/P18.jpg" alt="격자 창 앞 화분과 책장" loading="lazy"></div>
+    <img class="x5__note" data-reveal src="사진/G37_노트연필_5.png" alt="">
+    <img class="x5__card" data-reveal src="사진/G36_엽서_5.png" alt="">
+   </div>
+  </section>
+  <section id="rest" class="rest" aria-label="책방지기의 말">
+    <img data-photo="rest" src="사진/P11.jpg" alt="오후 볕이 드는 책 벽과 격자 통창" loading="lazy">
+    <blockquote class="rest__q rv"><span data-t="T_REST.q">「어떤 활동이든 여기 와서<br>각자의 빈곳을 채워갈 수 있으면<br>하는 바람이다.」</span><cite data-t="T_REST.by">책방지기 · 『기장사람들』 366호 인터뷰에서</cite></blockquote>
+  </section>
+  <div id="ch2" class="chapter" style="--tone:#BBC99B;--tone-ink:var(--ink)">
+    <svg class="chapter__tear" viewBox="0 0 1200 24" preserveAspectRatio="none" aria-hidden="true"><path d="M0 24V10 L31 12 L72 5 L107 12 L146 13 L188 4 L231 3 L270 7 L311 6 L341 10 L382 11 L421 9 L465 5 L496 13 L524 11 L560 3 L605 4 L634 12 L659 7 L683 7 L722 12 L758 9 L794 12 L832 5 L867 4 L892 5 L931 6 L963 13 L1000 13 L1033 9 L1073 9 L1115 8 L1156 12 L1193 12 L1200 8 V24Z"/></svg>
+    <div class="chapter__in rv"><span class="chapter__tab">Ⅱ</span><p class="chapter__name" data-t="T_CHAPTERS.c2">모임</p><p class="chapter__line" data-t="T_CHAPTERS.c2l">같은 테이블에 여러 모임이 차례로 둘러앉아요</p></div>
+  </div>
+  <section id="clubs" class="n6" aria-label="독서모임">
+   <div class="n6__stage">
+    <h2 class="x6-at x6-h"><span data-t="T_CLUBS.h1">함께 읽고,</span><em data-t="T_CLUBS.h2">한 줄씩 써요</em></h2>
+    <p class="x6-at x6-lead" data-t="T_CLUBS.lead">책 한 권을 함께 읽고, 읽은 자리에서 짧은 글을 써요. 모임마다 결이 달라요.</p>
+    <a class="x6-at x6-go js-sms" href="sms:01048451007" data-t="T_CLUBS.go">모임 신청</a>
+    <div id="n6open"></div>
+    <div class="x6-at x6-hero" id="n6hero"></div>
+    <div class="x6-at x6-five"><h3 class="x6-ttl" style="margin:0" data-t="T_CLUBS.five">모임 다섯</h3><p class="x6-hint" data-t="T_CLUBS.hint">표지를 누르면 그 모임의 책과 이야기가 나와요</p><div class="x6-covers" id="n6covers"></div></div>
+    <div class="x6-at x6-how" id="n6how"></div>
+    <div class="x6-at x6-days" id="n6days"></div>
+    <div class="x6-at x6-revs" id="n6revs"></div>
+   </div>
+   <div hidden aria-hidden="true"><div id="clubChips"></div><div id="clubShow"></div><div id="clubBook"></div><div id="clubReviews"></div></div>   
+  </section>
+  <section id="month" class="x7" aria-label="이번 달 일정">
+   <div class="x7__stage">
+    <p class="x7__brand" data-t="T_CAL.brand">기억의 숲</p>
+    <div class="x7__paper">
+     <b class="x7__mon">10월</b><b class="x7__yr">2026</b>
+     <div class="x7__wk"><span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span></div>
+     <div class="x7__cal" id="x7cal"></div>
+     <ul class="x7__list" id="x7list"></ul>
+     <div class="x7__memo"><small>메모</small><p>신청은 「모임 신청」에서 받아요.</p><p>우리동네 다락방은 문화재단 지원으로 열려요.</p><p>23일부터 25일까지 광안리해변도서전 북마켓에 함께해요.</p></div>
+    </div>
+    <span class="x7__tape"></span>
+   </div>
+  </section>
+  <div hidden aria-hidden="true"><h2 id="calTitle"></h2><span id="calYear"></span><div id="calGrid"></div><ul id="monthList"></ul><p id="monthNote"></p></div>
+  <div id="ch3" class="chapter" style="--tone:#E8DDC0;--tone-ink:var(--ink)">
+    <svg class="chapter__tear" viewBox="0 0 1200 24" preserveAspectRatio="none" aria-hidden="true"><path d="M0 24V10 L31 12 L72 5 L107 12 L146 13 L188 4 L231 3 L270 7 L311 6 L341 10 L382 11 L421 9 L465 5 L496 13 L524 11 L560 3 L605 4 L634 12 L659 7 L683 7 L722 12 L758 9 L794 12 L832 5 L867 4 L892 5 L931 6 L963 13 L1000 13 L1033 9 L1073 9 L1115 8 L1156 12 L1193 12 L1200 8 V24Z"/></svg>
+    <div class="chapter__in rv"><span class="chapter__tab">Ⅲ</span><p class="chapter__name" data-t="T_CHAPTERS.c3">책장</p><p class="chapter__line" data-t="T_CHAPTERS.c3l">테이블 위를 지나간 책과 책방지기의 책</p></div>
+  </div>
+  <section id="books" class="n8" aria-label="테이블 위를 지나간 책들">
+   <div class="n8__wrap">
+    <div class="n8__top"><h2 data-t="T_BOOKS.h">테이블 위를 지나간 책들</h2><span class="n8__count" id="n8count"></span></div>
+    <ul class="n8__tabs" id="n8tabs" role="tablist" aria-label="모임별 책"></ul>
+    <ul class="n8__shelf" id="n8shelf"></ul>
+    <button class="n8__more" type="button" id="n8more" aria-expanded="false">전체 보기</button>
+    <div class="n8__note" id="n8note" aria-live="polite" hidden></div>
+   </div>
+   <div hidden aria-hidden="true"><span id="bookCount"></span><div id="bookChips"></div><div id="covers"></div><button id="moreBooks" type="button"></button><div id="bookNote"></div></div>   
+  </section>
+  <section id="author" class="n9" aria-label="책방지기의 책">
+   <svg class="n9__wash" viewBox="0 0 1200 130" preserveAspectRatio="none" aria-hidden="true">
+  <defs><filter id="brush" x="-5%" y="-20%" width="110%" height="140%"><feTurbulence type="fractalNoise" baseFrequency="0.035 0.09" numOctaves="3" seed="4"/><feDisplacementMap in="SourceGraphic" scale="9"/></filter>
+  <filter id="bleed"><feGaussianBlur stdDeviation="2.2"/></filter></defs>
+  <path d="M0 -40 H1200 V93.7 C1236.7 92.9,1213.3 86.1,1190.0 86.7 C1166.7 87.4,1143.3 97.2,1120.0 97.8 C1096.7 98.4,1073.3 94.1,1050.0 90.3 C1026.7 86.5,1003.3 74.8,980.0 74.8 C956.7 74.8,933.3 88.7,910.0 90.5 C886.7 92.2,863.3 84.2,840.0 85.2 C816.7 86.3,793.3 96.8,770.0 96.8 C746.7 96.7,723.3 84.2,700.0 85.0 C676.7 85.9,653.3 103.1,630.0 101.9 C606.7 100.6,583.3 81.4,560.0 77.5 C536.7 73.6,513.3 75.1,490.0 78.3 C466.7 81.5,443.3 98.1,420.0 96.8 C396.7 95.5,373.3 74.5,350.0 70.4 C326.7 66.3,303.3 68.8,280.0 72.1 C256.7 75.4,233.3 87.2,210.0 90.0 C186.7 92.9,163.3 90.7,140.0 89.3 C116.7 88.0,93.3 82.2,70.0 81.8 C46.7 81.5,23.3 88.1,0.0 87.4 Z" fill="#A1B37D" opacity=".45" filter="url(#bleed)"/>
+  <path d="M0 -40 H1200 V63.3 C1191.7 64.0,1173.3 79.0,1155.0 79.1 C1136.7 79.2,1118.3 64.0,1100.0 63.8 C1081.7 63.7,1063.3 75.4,1045.0 78.4 C1026.7 81.4,1008.3 83.9,990.0 82.0 C971.7 80.0,953.3 69.5,935.0 66.7 C916.7 63.9,898.3 66.3,880.0 65.2 C861.7 64.1,843.3 58.9,825.0 60.3 C806.7 61.7,788.3 71.7,770.0 73.8 C751.7 75.9,733.3 74.4,715.0 73.1 C696.7 71.7,678.3 66.2,660.0 65.9 C641.7 65.6,623.3 71.8,605.0 71.3 C586.7 70.7,568.3 61.0,550.0 62.7 C531.7 64.4,513.3 79.5,495.0 81.6 C476.7 83.8,458.3 75.4,440.0 75.6 C421.7 75.7,403.3 83.4,385.0 82.6 C366.7 81.9,348.3 74.8,330.0 71.2 C311.7 67.5,293.3 58.9,275.0 60.7 C256.7 62.5,238.3 79.3,220.0 82.1 C201.7 85.0,183.3 77.7,165.0 77.8 C146.7 77.8,128.3 82.4,110.0 82.6 C91.7 82.8,73.3 79.9,55.0 79.1 C36.7 78.3,18.3 78.5,0.0 77.8 Z" fill="#AEBD89" filter="url(#brush)"/>
+</svg>
+   <div class="n9__run" id="n9run">
+    <div class="n9__frame">
+     <p class="at n9__ttl" data-t="T_AUTHOR.ttl">책방지기의 책</p>
+     <p class="at n9__name"><b data-t="T_AUTHOR.book">기억이 나를 멈추게 한다면</b> <span data-t="T_AUTHOR.by">장성남</span></p>
+     <p class="at n9__say" data-t="T_AUTHOR.say">무너진 자리에서 어린 시절 기억쓰기를 만나 회복해 온 이야기. 2024년 7월 책방지기 북토크로 처음 테이블에서 나눴어요.</p>
+     <div class="n9__view"><div class="n9__stage"><div class="n9__book" role="img" aria-label="기억이 나를 멈추게 한다면 — 표지가 열리며 안쪽 모네 그림이 펼쳐짐"><div class="pg-r"></div><div class="lf s4"><div class="face front" style="background-image:url(사진/책방지기책/쪽_16.jpg)"></div><div class="face back" style="background-image:url(사진/책방지기책/쪽_03.jpg)"></div></div><div class="lf s3"><div class="face front" style="background-image:url(사진/책방지기책/쪽_17.jpg)"></div><div class="face back" style="background-image:url(사진/책방지기책/쪽_29.jpg)"></div></div><div class="lf s2"><div class="face front" style="background-image:url(사진/책방지기책/쪽_18.jpg)"></div><div class="face back" style="background-image:url(사진/책방지기책/쪽_28.jpg)"></div></div><div class="lf s1"><div class="face front" style="background-image:url(사진/책방지기책/쪽_13.jpg)"></div><div class="face back" style="background-image:url(사진/책방지기책/쪽_10.jpg)"></div></div><div class="lf lf--cover"><div class="face front"></div><div class="face back" style="background-image:url(사진/책방지기책/쪽_02.jpg)"></div></div><div class="sheen"><i></i></div></div><img class="leaf" data-r="-28" src="사진/잎/잎_5.png" alt="" style="left:46px;top:206px;width:112px;filter:blur(5px)"><img class="leaf" data-r="22" src="사진/잎/잎_8.png" alt="" style="left:1016px;top:150px;width:44px"><img class="leaf" data-r="48" src="사진/잎/잎_1.png" alt="" style="left:176px;top:560px;width:46px"><img class="leaf" data-r="-16" src="사진/잎/잎_3.png" alt="" style="left:958px;top:470px;width:62px;filter:blur(1px)"><img class="leaf" data-r="18" src="사진/잎/잎_4.png" alt="" style="left:28px;top:770px;width:124px;filter:blur(4px)"><img class="leaf" data-r="-38" src="사진/잎/잎_6.png" alt="" style="left:1046px;top:742px;width:96px;filter:blur(2px)"><img class="leaf" data-r="-60" src="사진/잎/잎_7.png" alt="" style="left:292px;top:138px;width:36px"><img class="leaf" data-r="30" src="사진/잎/잎_2.png" alt="" style="left:870px;top:268px;width:40px"></div></div>
+     <a class="at n9__more" href="https://blog.naver.com/jsn4577/223503855942" target="_blank" rel="noopener" data-href="T_AUTHOR.link" data-t="T_AUTHOR.more">책 이야기 더 보기</a>
+     <span class="n9__hint" data-t="T_AUTHOR.hint">아래로 내려 보세요</span>
+    </div>
+   </div>
+  </section>
+  <div id="ch4" class="chapter" style="--tone:#99AE76;--tone-ink:#3B2410">
+    <svg class="chapter__tear" viewBox="0 0 1200 24" preserveAspectRatio="none" aria-hidden="true"><path d="M0 24V10 L31 12 L72 5 L107 12 L146 13 L188 4 L231 3 L270 7 L311 6 L341 10 L382 11 L421 9 L465 5 L496 13 L524 11 L560 3 L605 4 L634 12 L659 7 L683 7 L722 12 L758 9 L794 12 L832 5 L867 4 L892 5 L931 6 L963 13 L1000 13 L1033 9 L1073 9 L1115 8 L1156 12 L1193 12 L1200 8 V24Z"/></svg>
+    <div class="chapter__in rv"><span class="chapter__tab">Ⅳ</span><p class="chapter__name" data-t="T_CHAPTERS.c4">어린 시절 기억쓰기</p><p class="chapter__line" data-t="T_CHAPTERS.c4l">어린 시절의 한 장면에서 시작하는 글쓰기</p></div>
+  </div>
+  <section id="memory" class="n12" aria-label="어린 시절 기억쓰기">
+   <div class="n12__top">
+    <div class="n12__wrap">
+     <div class="n12__head">
+      <div><h2 data-t="T_MEMORY.h">어린 시절<br>기억쓰기</h2><p class="n12__lead" data-t="T_MEMORY.lead">자신을 이해하고 좀 더 깊이 알아가는 셀프&nbsp;테라피.<br>어린시절 기억쓰기로 초대합니다.</p></div>
+      <blockquote class="n12__epi"><p data-t="T_MEMORY.epi">우리는 저마다의 어린 시절을 간직하고 있다.<br>기억 속에 어린 시절이 숨바꼭질하고 있다.<br>기억의 숲에서 술래잡기를 하고 있을<br>그 아이의 손을 꼭 잡아 주고싶다.<br>이제 당신이 어린 시절 기억쓰기를 시작할 차례다.</p><cite data-t="T_MEMORY.epiby">『기억이 나를 멈추게 한다면』 에필로그 중</cite></blockquote>
+     </div>
+     <div class="n12__road" data-reveal data-reveal-at=".45">
+      <img class="roadimg" src="사진/G11_수채길.png" alt="" aria-hidden="true">
+      <div class="stop s1" data-reveal><h3><b>1</b><span data-t="T_MEMORY.s1">인생지도</span></h3><p data-t="T_MEMORY.s1p">태어나서 지금까지, 행복지수를 점으로 찍고 선으로 이어요.</p><img class="ico" src="사진/G12_인생지도.png" alt=""></div>
+      <div class="stop s2" data-reveal><h3><b>2</b><span data-t="T_MEMORY.s2">감정 따라 기억 쓰기</span></h3><p><span data-t="T_MEMORY.s2p">기쁨·자책·원망·불안, 감정을 따라 떠오른 한 장면을 써요.</span><span class="form"><span data-t="T_MEMORY.s2f">맨 위엔</span> <b data-t="T_MEMORY.s2fb">제목 · 나이 · 관련 인물</b><br><span data-t="T_MEMORY.s2fx">예) 화상 · 10살 · 아버지</span></span></p><img class="ico" src="사진/G13_공책연필.png" alt=""></div>
+      <div class="stop s3" data-reveal><h3><b>3</b><span data-t="T_MEMORY.s3">양육 태도와 기질</span></h3><p data-t="T_MEMORY.s3p">부모의 양육 태도와 타고난 기질로 내 감정의 뿌리를 찾아요.</p><img class="ico" src="사진/G14_손거울.png" alt=""></div>
+      <div class="stop s4" data-reveal><h3><b>4</b><span data-t="T_MEMORY.s4">어린 나에게 편지</span></h3><p data-t="T_MEMORY.s4p">마지막 날 소리 내어 읽고, 편지는 한 달 뒤 집으로 와요.</p><img class="ico" src="사진/G15_편지봉투.png" alt=""></div>
+     </div>
+    </div>
+   </div>
+   <div class="n12__bot">
+    <svg class="wave" viewBox="0 0 1200 56" preserveAspectRatio="none" aria-hidden="true"><path d="M0 56 L0 30 C150 6 300 6 450 26 C600 46 750 50 900 28 C1020 10 1110 8 1200 22 L1200 56 Z" fill="#BBC99B"/></svg>
+    <div class="n12__wrap">
+     <div class="n12__cmp">
+      <article class="ccard">
+       <figure class="ph"><img class="photo" data-photo="n12" src="사진/P20.jpg" alt="책상에서 글을 쓰는 사람과 둘레에서 노는 아이들 그림"><img class="clip" src="사진/G29_낙서_종이집게.png" alt=""></figure>
+       <h4 data-t="T_MEMORY.card">10회 과정</h4>
+       <div class="row" data-t="T_MEMORY.r1">어린 시절 기억을 모두 써 봐요</div>
+       <div class="row" data-t="T_MEMORY.r2">매주 한 번 2시간<br>(오전반 · 저녁반)</div>
+       <div class="row" data-t="T_MEMORY.r3">3~5명</div>
+       <div class="row" data-t="T_MEMORY.r4">20만 원(차 포함)</div>
+       <div class="row" data-t="T_MEMORY.r5">신청이 모이면 열어요</div>
+      </article>
+     </div>
+    </div>
+   </div>
+  </section>
+  <section id="fragments" class="x10" aria-label="기억의 조각">
+   <p class="x10__m" data-t="T_FRAG.m">기억의 조각 — 쓸 거리는 이미 있어요</p>
+   <div class="x10__stage">
+    <div class="x10__box">
+     <div class="x10__filmclip"><img class="x10__film" src="사진/F02_필름띠.png" alt="" loading="lazy"></div>
+      <figure class="x10__ph" style="--x:473px;--y:24px;--w:171px;--h:114px;--z:1"><img data-photo="x10_1" src="사진/기억조각/M01_혼례_단체사진.jpg" alt="혼례 날 단체 사진" loading="lazy"></figure>
+      <figure class="x10__ph" style="--x:448px;--y:185px;--w:208px;--h:207px;--z:1;--op:40% 50%"><img data-photo="x10_2" src="사진/기억조각/M04_꽃밭_겹쳐찍기.jpg" alt="꽃밭에서 겹쳐 찍힌 사진" loading="lazy"></figure>
+      <figure class="x10__ph" style="--x:537px;--y:147px;--w:192px;--h:128px;--z:2"><img data-photo="x10_3" src="사진/기억조각/M02_귤_둘러앉은_식구.jpg" alt="귤을 두고 둘러앉은 식구" loading="lazy"></figure>
+      <figure class="x10__ph" style="--x:528px;--y:348px;--w:208px;--h:257px;--z:2;--op:50% 40%"><img data-photo="x10_4" src="사진/기억조각/M03_졸업식_꽃다발.jpg" alt="졸업식 날 꽃다발" loading="lazy"></figure>
+      <figure class="x10__ph" style="--x:485px;--y:598px;--w:111px;--h:112px;--z:3"><img data-photo="x10_5" src="사진/기억조각/M08_블로그_보물상자일기장.jpg" alt="보물 상자 속 노란 표지 일기장" loading="lazy"></figure>
+      <figure class="x10__ph" style="--x:406px;--y:711px;--w:209px;--h:138px;--z:3"><img data-photo="x10_6" src="사진/기억조각/M09_블로그_일기장속지.jpg" alt="손글씨 일기장 속지" loading="lazy"></figure>
+      <figure class="x10__ph" style="--x:596px;--y:605px;--w:140px;--h:152px;--z:4;--op:30% 50%"><img data-photo="x10_7" src="사진/기억조각/M05_빨간_점퍼.jpg" alt="빨간 점퍼를 입은 아이" loading="lazy"></figure>
+            <figure class="x10__ph" style="--x:534px;--y:813px;--w:202px;--h:121px;--z:5"><img data-photo="x10_8" src="사진/기억조각/M06_시골_마을.jpg" alt="시골 마을" loading="lazy"></figure>
+     <p class="x10__say" data-t="T_FRAG.say">기억의 조각<br>쓸 거리는<br>이미 있어요</p>
+    </div>
+   </div>
+  </section>
+  <div hidden aria-hidden="true"><div class="pieces__film"><div id="vfilm"></div></div><div id="piecesStage"></div><p id="pieceSay"></p><b id="pieceN"></b></div>
+  <section id="taste" class="n11" aria-label="엽서 한 장, 편지 한 통">
+   <div class="n11__stage">
+    <figure class="card front"><div class="ph"><img data-photo="n11" src="사진/P19.jpg" alt="책방 편지 쓰기 책상 — 어린 나에게 쓰는 편지 안내판, 편지지와 어린 왕자 엽서"></div></figure>
+    <article class="card back">
+     <div class="msg">
+      <h2 data-t="T_TASTE.h">엽서 한 장, 편지 한 통</h2>
+      <ol>
+       <li data-t="T_TASTE.s1">가장 어린 첫 기억을 엽서에 적어요</li>
+       <li data-t="T_TASTE.s2">함께 나누고, 엽서는 입구 보드에 붙여요</li>
+       <li data-t="T_TASTE.s3">어린 나에게 편지를 쓰고 꾸며요</li>
+       <li data-t="T_TASTE.s4">사진엽서 한 장을 골라 봉투에 넣고 주소를 적어요</li>
+       <li data-t="T_TASTE.s5">한 달 뒤, 편지가 집으로 와요</li>
+      </ol>
+     </div>
+     <p class="sign" data-t="T_TASTE.sign">기억의 숲에는 어린 시절이 숨어 있다</p>
+     <span class="rule" aria-hidden="true"></span>
+     <img class="mark" src="사진/G09_소인_둥근.png" alt="" aria-hidden="true">
+     <p class="pc" aria-hidden="true">POST CARD</p>
+     <img class="wave" src="사진/G10_소인_물결.png" alt="" aria-hidden="true">
+     <img class="stamp" src="사진/G08_우표_새.png" alt="" aria-hidden="true">
+     <ul class="addr">
+      <li data-t="T_TASTE.time">1시간 남짓</li>
+      <li data-t="T_TASTE.price">1인 10,000원, 커피와 쿠키 포함</li>
+      <li><a class="js-sms" href="sms:01048451007" data-t="T_TASTE.ask">체험 예약 문의</a></li>
+     </ul>
+    </article>
+   </div>
+   <div id="dropList" hidden></div>
+  </section>
+  <section id="faq" class="n13" aria-label="망설여질 때">
+   <div class="n13__wrap">
+    <h2 data-t="T_FAQ.h">망설여질 때</h2>
+    <ul class="n13__list">
+     <li class="qa"><img class="ico pencil" src="사진/G20_연필.png" alt=""><h3 data-t="T_FAQ.q1">글을 써 본 적이 없어도 되나요?</h3><p data-t="T_FAQ.a1">잘 쓰려고 하지 않아도 돼요. 질문을 따라, 쓸 수 있는 만큼 쓰면 돼요.</p><span class="by" data-t="T_FAQ.by">책방지기</span></li>
+     <li class="qa"><img class="ico feather" src="사진/G21_깃털.png" alt=""><h3 data-t="T_FAQ.q2">무거운 이야기를 꺼내야 하나요?</h3><p data-t="T_FAQ.a2">부모를 탓하는 자리가 아니에요. 그때 일을 사실대로 알아가는 자리예요.</p><span class="by" data-t="T_FAQ.by">책방지기</span></li>
+     <li class="qa"><img class="ico map" src="사진/G22_지도.png" alt=""><h3 data-t="T_FAQ.q3">쓸 만한 기억이 없는 것 같아요</h3><p data-t="T_FAQ.a3">인생지도부터 그려요. 지나온 삶을 한눈에 보다 보면, 장면이 하나씩 떠올라요.</p><span class="by" data-t="T_FAQ.by">책방지기</span></li>
+     <li class="qa"><img class="ico cups" src="사진/G23_찻잔둘.png" alt=""><h3 data-t="T_FAQ.q4">혼자 쓰기 막막하면요?</h3><p data-t="T_FAQ.a4">매주 책방에서 함께 쓰고, 단톡방에 올려 서로 응원해요. 줌으로도 함께할 수 있어요.</p><span class="by" data-t="T_FAQ.by">책방지기</span></li>
+    </ul>
+   </div>
+  </section>
+  <section id="palm" class="x14" aria-label="다녀간 사람의 말">
+   <div class="x14__bg" aria-hidden="true"><img src="사진/B10_파스텔풍경_14.jpg" alt=""></div>
+   <div class="x14__wrap">
+    <h2 data-t="T_PALM.h">다녀간 사람의 말</h2>
+    <ul class="x14__notes" id="x14notes">
+     <li class="x14__paper"><p>질문들을 따라 기억을 더듬다 보니 나 자신 뿐만 아니라 부모님과 형제들의 삶까지도 깊게 들여다 볼 수 있었다. 어린 시절 내가 느꼈던 감정과 생각들을 고스란히 받아주고 위로해주는 시간이 참 따뜻했다.</p><span class="by">어린 시절 기억 쓰기 1기</span></li>
+     <li class="x14__paper"><p>꼭 황무지 땅에 보석을 캐는 느낌이었습니다. 또 전쟁터에서 복구하는 작업이었습니다. 나눔도 좋았고, 쓸 글 생각이 안 날까 봐 올려주시는 질문들도 좋았습니다.</p><span class="by">어린 시절 기억 쓰기 1기</span></li>
+     <li class="x14__paper"><p>어린시절 기억쓰기를 하면서 어린시절 저를 다시 만나고 보듬어줄 수 있어 감사한 시간이었습니다. 외로움이나 두려움같은 감정들을 외면하지 말고 기억쓰기를 통해서 조금씩 대면하고 회복할 수 있을 것 같습니다.</p><span class="by">어린 시절 기억 쓰기 1기</span></li>
+    </ul>
+   </div>
+  </section>
+  <section id="apply" class="x15" aria-label="신청 · 문의">
+   <div class="x15__band">
+    <a class="x15__card c1 js-sms" href="sms:01048451007"><img data-photo="k5" src="사진/K5_말풍선.png" alt=""><b data-t="T_APPLY.c1">문자로 모임 신청</b></a>
+    <a class="x15__card c2 js-sms" href="sms:01048451007"><img data-photo="k6" src="사진/K6_편지.png" alt=""><b data-t="T_APPLY.c2">엽서·편지 체험 예약</b></a>
+   </div>
+  </section>
+  <div id="ch5" class="chapter" style="--tone:#DDDAB2;--tone-ink:var(--ink)">
+    <svg class="chapter__tear" viewBox="0 0 1200 24" preserveAspectRatio="none" aria-hidden="true"><path d="M0 24V10 L31 12 L72 5 L107 12 L146 13 L188 4 L231 3 L270 7 L311 6 L341 10 L382 11 L421 9 L465 5 L496 13 L524 11 L560 3 L605 4 L634 12 L659 7 L683 7 L722 12 L758 9 L794 12 L832 5 L867 4 L892 5 L931 6 L963 13 L1000 13 L1033 9 L1073 9 L1115 8 L1156 12 L1193 12 L1200 8 V24Z"/></svg>
+    <div class="chapter__in rv"><span class="chapter__tab">Ⅴ</span><p class="chapter__name" data-t="T_CHAPTERS.c5">기록</p><p class="chapter__line" data-t="T_CHAPTERS.c5l">작가와, 지원 행사와, 바깥의 눈으로 남은 것들</p></div>
+  </div>
+  <section id="support" class="x16" aria-label="지원 프로그램과 북토크">
+   <div class="x16__bg" aria-hidden="true"><img src="사진/B10_파스텔풍경_14.jpg" alt=""></div>
+   <section class="x16__panel" aria-label="지원 프로그램">
+    <header><h2 data-t="T_SUPPORT.h1">지원 프로그램</h2><span class="when"><b>6</b><span data-t="T_SUPPORT.w1">번의 지원 행사</span></span></header>
+    <ul class="x16__row">
+      <li class="x16__card"><span class="no">01</span><h3>기억의 숲에서 어린 시절을 엮다</h3><p>2026. 9. 30 ~ 11. 25<br>우리동네 다락방(기장군)</p><img class="pic poster" src="사진/행사/E01.jpg" alt="「기억의 숲에서 어린 시절을 엮다」 포스터" loading="lazy"></li>
+      <li class="x16__card"><span class="no">02</span><h3>『눈물 상자』 읽고 롤온 향수 만들기</h3><p>2026. 10. 10<br>부산바다도서관 B-북스팟</p><img class="pic poster" src="사진/행사/E02.jpg" alt="『눈물 상자』 읽고 롤온 향수 만들기 포스터" loading="lazy"></li>
+      <li class="x16__card"><span class="no">03</span><h3>기억의 숲에서 아름다움을 만나다</h3><p>2026. 8. 21 ~ 9. 18<br>부산도서관 지역서점 지원</p><img class="pic poster" src="사진/행사/E03.jpg" alt="「기억의 숲에서 아름다움을 만나다」 포스터" loading="lazy"></li>
+      <li class="x16__card"><span class="no">04</span><h3>기억 엽서·편지 체험</h3><p>2026. 6. 27<br>부산바다도서관 B-북스팟</p><img class="pic poster" src="사진/행사/E04.jpg" alt="「나에게 쓰는 편지 & 어린 시절 기억 엽서 쓰기」 안내" loading="lazy"></li>
+      <li class="x16__card"><span class="no">05</span><h3>다락방 북클럽</h3><p>2025, 다섯 달<br>부산도서관 독서동아리 지원</p><img class="pic" src="사진/행사/E05.jpg" alt="부산도서관 독서문집 『책·담·글·담』" loading="lazy"></li>
+      <li class="x16__card"><span class="no">06</span><h3>기억의 숲에서 나를 만나다</h3><p>2024. 6. 27 ~ 7. 25<br>부산도서관 지원</p><img class="pic" src="사진/행사/E06.jpg" alt="「기억의 숲에서 나를 만나다」 강연 날 책방" loading="lazy"></li>
+    </ul>
+    <div class="x16__track" aria-hidden="true"><i></i></div>
+   </section>
+   <section id="talks" class="x16__panel" aria-label="북토크">
+    <header><h2 data-t="T_SUPPORT.h2">북토크</h2><span class="when"><b>11</b><span data-t="T_SUPPORT.w2">권의 책과 작가</span></span></header>
+    <ul class="x16__row">
+      <li class="x16__card"><span class="no">01</span><h3>김여나 작가</h3><p>2026. 10. 21 (열릴 예정)</p><span class="cover"><img src="사진/표지/TK01.jpg" alt="『우리, 진짜 가족 맞아?』 표지" loading="lazy"></span></li>
+      <li class="x16__card"><span class="no">02</span><h3>박재명 작가</h3><p>2026. 9. 30</p><span class="cover"><img src="사진/표지/TK02.jpg" alt="『팔순에 한글 공부를 시작했습니다』 표지" loading="lazy"></span></li>
+      <li class="x16__card"><span class="no">03</span><h3>김주미 작가</h3><p>2026. 8. 28</p><span class="cover"><img src="사진/표지/TK03.jpg" alt="『스타일은 태도다』 표지" loading="lazy"></span></li>
+      <li class="x16__card"><span class="no">04</span><h3>김미영 작가</h3><p>2026. 8. 21</p><span class="cover"><img src="사진/표지/TK04.jpg" alt="『다시 쓰는 마음』 표지" loading="lazy"></span></li>
+      <li class="x16__card"><span class="no">05</span><h3>최선경 작가</h3><p>2026. 2. 28</p><span class="cover"><img src="사진/표지/TK05.jpg" alt="『인문 고전 필사의 힘』 표지" loading="lazy"></span></li>
+      <li class="x16__card"><span class="no">06</span><h3>김희숙 작가</h3><p>2026. 2.</p><span class="cover"><img src="사진/표지/TK06.jpg" alt="『나는 언제 행복했더라』 표지" loading="lazy"></span></li>
+      <li class="x16__card"><span class="no">07</span><h3>공저 작가들</h3><p>2025. 5. 25</p><span class="cover"><img src="사진/표지/TK07.jpg" alt="『삶이 레몬을 준다면 레모네이드를 만들어라』 표지" loading="lazy"></span></li>
+      <li class="x16__card"><span class="no">08</span><h3>김창운 시인</h3><p>2025. 4. 5</p><span class="cover"><img src="사진/표지/TK08.jpg" alt="『하늘 투명 거울』 표지" loading="lazy"></span></li>
+      <li class="x16__card"><span class="no">09</span><h3>진가록 작가</h3><p>2024. 12. 16</p><span class="cover"><img src="사진/표지/TK09.jpg" alt="『낭독 독서법』 표지" loading="lazy"></span></li>
+      <li class="x16__card"><span class="no">10</span><h3>이서윤 작가</h3><p>2024. 7. 29</p><span class="cover"><img src="사진/표지/TK11.jpg" alt="『아무튼 지치지 않도록』 표지" loading="lazy"></span></li>
+      <li class="x16__card"><span class="no">11</span><h3>장성남 책방지기</h3><p>2024. 7. 4</p><span class="cover"><img src="사진/책방지기책/표지.jpg" alt="『기억이 나를 멈추게 한다면』 표지" loading="lazy"></span></li>
+    </ul>
+    <div class="x16__track" aria-hidden="true"><i></i></div>
+   </section>
+  </section>
+  <section id="press" class="x18" aria-label="언론 소개">
+   <div class="x18__stage">
+    <h2 class="x18__ttl" data-t="T_PRESS.h">언론 소개</h2>
+    <div class="x18__folder">
+     <ul class="x18__tabs" id="x18tabs"><li><button type="button" data-k="신문" class="on">신문</button></li><li><button type="button" data-k="영상">영상</button></li><li><button type="button" data-k="방송">방송</button></li></ul>
+     <div class="x18__body" id="x18body" aria-live="polite"></div>
+     <figure class="x18__ph" id="x18ph" hidden><img alt=""></figure>   
+     <img class="x18__dd x18__dd5" src="사진/G29_낙서_종이집게.png" alt="">
+     <button type="button" class="x18__arrow l" id="x18prev" aria-label="앞 기사">‹</button><button type="button" class="x18__arrow r" id="x18next" aria-label="다음 기사">›</button>
+    </div>
+    <img class="x18__dd x18__dd1" src="사진/G25_낙서_하트.png" alt=""><img class="x18__dd x18__dd2" src="사진/G26_낙서_별.png" alt=""><img class="x18__dd x18__dd3" src="사진/G27_낙서_소용돌이.png" alt=""><img class="x18__dd x18__dd4" src="사진/G28_낙서_작은하트.png" alt="">
+    <div class="x18__ctrl"><div class="x18__dots" id="x18dots"></div></div>
+   </div>
+  </section>
+  <section id="diary" class="x19" aria-label="책방일기">
+   <div class="x19__wrap">
+    <h2 data-t="T_DIARY.h">책방일기</h2>
+    <p class="x19__lead" data-t="T_DIARY.lead">책방지기가 모임을 마치고, 소식이 생길 때마다 적어 온 글이에요.</p>
+    <ul class="x19__posts" id="x19posts"></ul>
+   </div>
+  </section>
+  <div hidden aria-hidden="true"><ul id="progs"></ul><ul id="talkRows"></ul><div id="clips"></div><div id="diaryFolders"></div></div>
+  <div id="ch6" class="chapter" style="--tone:#BBC99B;--tone-ink:var(--ink)">
+    <svg class="chapter__tear" viewBox="0 0 1200 24" preserveAspectRatio="none" aria-hidden="true"><path d="M0 24V10 L31 12 L72 5 L107 12 L146 13 L188 4 L231 3 L270 7 L311 6 L341 10 L382 11 L421 9 L465 5 L496 13 L524 11 L560 3 L605 4 L634 12 L659 7 L683 7 L722 12 L758 9 L794 12 L832 5 L867 4 L892 5 L931 6 L963 13 L1000 13 L1033 9 L1073 9 L1115 8 L1156 12 L1193 12 L1200 8 V24Z"/></svg>
+    <div class="chapter__in rv"><span class="chapter__tab">Ⅵ</span><p class="chapter__name" data-t="T_CHAPTERS.c6">오시는 길</p><p class="chapter__line" data-t="T_CHAPTERS.c6l">찾아오는 길과 문의</p></div>
+  </div>
+  <section id="visit" class="x20" aria-label="오시는 길">
+   <div class="x20__top">
+    <div class="x20__stage">
+     <div class="x20__map">
+      <img class="x20__mapimg" src="사진/G34_손그림지도_20.jpg" alt="책방 둘레 손그림 약도 — 기장대로 사거리 남동쪽 모퉁이에 책방, 바로 아래 내리초등학교 정류장, 북서쪽에 내리초등학교, 남서쪽에 아파트, 북동쪽에 공원" loading="lazy">
+      <span class="x20__lb road v" style="left:57%;top:20%" data-t="T_VISIT.road">기장대로</span>
+      <span class="x20__lb road" style="left:14%;top:51.4%" data-t="T_VISIT.road">기장대로</span>
+      <span class="x20__lb" style="left:31%;top:12%" data-t="T_VISIT.school">내리초등학교</span>
+      <span class="x20__lb" style="left:72%;top:30%" data-t="T_VISIT.park">뜰마루마당 공원</span>
+      <span class="x20__lb bus" style="left:61.5%;top:70.5%"><small data-t="T_VISIT.buss">버스 정류장</small><span data-t="T_VISIT.bus">내리초등학교</span></span>
+      <i class="x20__dot" style="left:66.4%;top:57.6%"></i>
+      <span class="x20__lb shop" style="left:64%;top:52.5%" data-t="T_VISIT.shop">책방 기억의 숲</span>
+     </div>
+     <div class="x20__door"><img src="사진/G35_책방입구_20.png" alt="책방 기억의 숲 앞모습 — 초록 간판, 노란 벽, 활짝 열린 흰 문, 격자 창 앞 화분들" loading="lazy"><span class="x20__sign" aria-hidden="true"><b class="s-big">책방</b><svg class="s-book" viewBox="0 0 40 26"><path d="M20 5C14 1.5 7 1.5 2 3.5V23c5-2 12-2 18 1.5C26 21 33 21 38 23V3.5C33 1.5 26 1.5 20 5zM20 5v19.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg><i class="s-name">기억의숲</i><b class="s-board">책방</b><i class="s-chalk">어린<br>시절</i></span></div>
+     <div class="x20__info">
+      <h2 data-t="T_VISIT.h">기억의 숲으로<br>오는 길</h2>
+      <ul class="x20__way">
+       <li class="on" data-t="T_VISIT.w1">내리초등학교 앞 큰길 사거리</li>
+       <li data-t="T_VISIT.w2">버스 정류장 바로 옆, 1층</li>
+       <li data-t="T_VISIT.w3">초록 간판과 줄지어 선 꽃 화분</li>
+      </ul>
+      <div class="x20__hours"><span data-t="T_VISIT.hoursl">여는 시간</span><p data-t="SITE.hours">오전 10시 ~ 오후 6시 30분<br>일요일은 쉽니다</p></div>
+      <div class="x20__subs">
+       <a class="x20__sub" href="https://www.instagram.com/lifestory__books/" target="_blank" rel="noopener" data-href="SITE.insta"><svg class="ic"><use href="#i-insta"/></svg><span data-t="T_VISIT.insta">인스타그램</span></a>
+       <a class="x20__sub" href="https://www.youtube.com/@dream_jang" target="_blank" rel="noopener" data-href="SITE.youtube"><svg class="ic"><use href="#i-play"/></svg><span data-t="T_VISIT.youtube">유튜브</span></a>
+       <a class="x20__sub wide" data-sms="SITE.smstalk" href="sms:01048451007?&body=%EC%B1%85%EB%B0%A9%EA%B8%B0%EC%96%B5%EC%9D%98%EC%88%B2%20%EA%B0%95%EC%97%B0%C2%B7%ED%98%91%EC%97%85%20%EB%AC%B8%EC%9D%98%EB%93%9C%EB%A6%BD%EB%8B%88%EB%8B%A4.%20%28%EA%B8%B0%EA%B4%80%20%C2%B7%20%EB%82%B4%EC%9A%A9%20%C2%B7%20%ED%9D%AC%EB%A7%9D%20%EB%82%A0%EC%A7%9C%3A%20%29"><svg class="ic"><use href="#i-msg"/></svg><span data-t="T_VISIT.talk">강연·협업 문의</span></a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="x20__band">
+    <div><span class="x20__lab" data-t="T_VISIT.ltel">전화</span><a class="x20__v" href="tel:01048451007" data-tel data-t="SITE.phone">010-4845-1007</a></div>
+    <div><span class="x20__lab" data-t="T_VISIT.laddr">주소</span><p><span data-t="SITE.addr">부산 기장군 기장읍 기장대로 82</span><br><a href="https://map.naver.com/p/entry/place/1207781784" target="_blank" rel="noopener" data-href="SITE.map" data-t="T_VISIT.map">지도에서 보기</a></p></div>
+    <div><span class="x20__lab" data-t="T_VISIT.lask">문의 · 예약</span><p data-t="T_VISIT.ask">문자로 연락 주시면 답해 드려요</p></div>
+    <a class="x20__btn js-sms" href="sms:01048451007" data-t="T_VISIT.btn">문자로 예약 문의</a>
+   </div>
+  </section>
+</main>
+<footer id="foot" class="x21">
+  <div class="x21__cols">
+    <div class="x21__brand">
+      <b data-t="T_FOOT.name">기억의 숲</b>
+      <p data-t="T_FOOT.about">부산 기장, 독서모임이 사는 책방.<br>책을 소리 내어 읽고, 옮겨 쓰고, 둘러앉아 이야기해요.</p>
+      <ul class="x21__sns">
+        <li><a data-href="SITE.insta" href="https://www.instagram.com/lifestory__books/" target="_blank" rel="noopener" aria-label="인스타그램"><svg class="ic"><use href="#i-insta"/></svg></a></li>
+        <li><a data-href="SITE.youtube" href="https://www.youtube.com/@dream_jang" target="_blank" rel="noopener" aria-label="유튜브 꿈책방"><svg class="ic"><use href="#i-play"/></svg></a></li>
+        <li><a data-href="SITE.blog" href="https://blog.naver.com/jsn4577" target="_blank" rel="noopener" aria-label="블로그"><svg class="ic"><use href="#i-pencil"/></svg></a></li>
+      </ul>
+    </div>
+    <nav class="x21__col" aria-label="책방"><h3 data-t="T_FOOT.h1">책방</h3><ul>
+      <li><a href="#about" data-t="T_FOOT.l1">여기는 어떤 곳</a></li>
+      <li><a href="#books" data-t="T_FOOT.l2">테이블 위를 지나간 책들</a></li>
+      <li><a href="#author" data-t="T_FOOT.l3">책방지기의 책</a></li>
+      <li><a href="#press" data-t="T_FOOT.l4">언론 소개</a></li>
+    </ul></nav>
+    <nav class="x21__col" aria-label="모임"><h3 data-t="T_FOOT.h2">모임</h3><ul>
+      <li><a href="#clubs" data-t="T_FOOT.l5">독서모임</a></li>
+      <li><a href="#taste" data-t="T_FOOT.l6">엽서 한 장, 편지 한 통</a></li>
+      <li><a href="#memory" data-t="T_FOOT.l7">어린 시절 기억쓰기</a></li>
+      <li><a href="#support" data-t="T_FOOT.l8">지원 프로그램 · 북토크</a></li>
+    </ul></nav>
+    <div class="x21__news">
+      <h3 data-t="T_FOOT.h3">책방 소식</h3>
+      <p data-t="T_FOOT.news">새 모임과 책 이야기는<br>책방일기에 먼저 올려요.</p>
+      <div class="x21__btns"><a class="x21__b1 js-sms" href="sms:01048451007" data-t="T_FOOT.b1">모임 신청</a><a class="x21__b2" href="https://blog.naver.com/jsn4577" target="_blank" rel="noopener" data-href="SITE.blog" data-t="T_FOOT.b2">책방일기 보기</a></div>
+    </div>
+  </div>
+  <div class="x21__base"><span data-t="T_FOOT.copy">© 책방 기억의 숲</span></div>   
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script>
+<script src="첫화면/hero.js" data-base="첫화면/" data-set="frames-popup"></script>
+<script src="본문/본문.js"></script>
+<script src="본문/새판.js"></script>
+</body>
+</html>
