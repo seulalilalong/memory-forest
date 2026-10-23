@@ -837,3 +837,12 @@
 
 
 html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+
+
+@media (max-width: 640px) { .topbar.open .menu a { display: block; } }
+
+
+.site-body .hero { background: var(--night); }
+
+
+.site-body section[id] { scroll-margin-top: var(--tbpx, 0px); }

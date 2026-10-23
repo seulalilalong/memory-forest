@@ -197,8 +197,12 @@
 
   
   let W = 0, H = 0, DPR = 1, rect = { x: 0, y: 0, w: 0, h: 0 }, portrait = false, dirty = true, BW = 100, BH = 75;
-  function resize() {
-    W = innerWidth; H = innerHeight; DPR = Math.min(2, devicePixelRatio || 1);
+  
+  const stage = front.parentElement;
+  function resize(e) {
+    const w = stage.clientWidth || innerWidth, h = stage.clientHeight || innerHeight, dpr = Math.min(2, devicePixelRatio || 1);
+    if (e && w === W && h === H && dpr === DPR) return;
+    W = w; H = h; DPR = dpr;
     front.width = W * DPR; front.height = H * DPR;
     back.width = Math.max(1, W / 4); back.height = Math.max(1, H / 4);
     leafCv.width = W * DPR; leafCv.height = H * DPR;
@@ -217,6 +221,7 @@
     dirty = true;
   }
   addEventListener("resize", resize);
+  if (window.ResizeObserver) new ResizeObserver(resize).observe(stage);
 
   
   const CAM_KEYS = [[0, 0.5], [40, 0.5], [54, 0.22], [72, 0.22], [80, 0.36], [88, 0.55], [100, 0.58], [119, 0.5]];
@@ -340,6 +345,6 @@
     settled = render(cur);
   });
 
-  $(".skip").addEventListener("click", e => { if (lenis) { e.preventDefault(); lenis.scrollTo("#next", { duration: 0.6 }); } });
+  $(".skip").addEventListener("click", e => { if (lenis) { e.preventDefault(); lenis.scrollTo("#next", { duration: 0.6, offset: -($(".topbar")?.offsetHeight || 0) }); } });
   window.__hero = { set: p => { target = cur = clamp(p, 0, 1); dirty = true; } };
 })();

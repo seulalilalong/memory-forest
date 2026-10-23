@@ -85,6 +85,10 @@ html.lenis, html.lenis body { height: auto; }
 
 .hint { position: absolute; left: 50%; bottom: 7vh; transform: translateX(-50%); margin: 0;
         color: #FFF8EA; font-size: 15px; letter-spacing: .08em; text-shadow: 0 1px 10px rgba(0,0,0,.5); }
+
+.hint { bottom: calc(7vh - 16px); padding: 16px 48px; white-space: nowrap;   
+        background: radial-gradient(closest-side, rgba(28, 18, 8, .74), rgba(28, 18, 8, .5) 55%, transparent); }
+@media (min-width: 900px) { .hint { font-size: 17px; } }
 .hint span { display: inline-block; animation: nudge 1.8s ease-in-out infinite; }
 .hint.is-off span { animation: none; }   
 @keyframes nudge { 50% { transform: translateY(5px); } }
