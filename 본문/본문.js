@@ -67,7 +67,7 @@
   }
 
   
-  fetch("본문/내용.json?v=202610231358").then(r => r.json()).then(D => {
+  fetch("본문/내용.json?v=202610231435").then(r => r.json()).then(D => {
     const last = D.TIMELINE[D.TIMELINE.length - 1], [Y, M] = last.ym.split("-").map(Number);
     const pick2 = (last.m || []).filter(m => /『/.test(m[1])).slice(0, 2).map(m => `${SHORT[m[0]] || ""} ${m[1].match(/『[^』]+』/)[0]}`);
     $("#topNote").textContent = (D.MONTH && D.MONTH.top) || `${M}월 모임 신청 받는 중 · ${pick2.join(" · ")} →`;
